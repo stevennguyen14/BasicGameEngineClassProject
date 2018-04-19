@@ -16,11 +16,11 @@ void Hero::setAnimation(Animation* animation){
 
 void Hero::update(float dt){
 	if (faceRight){
-		x += dt*200;
+		x += dt*400;
 	}
 	else
 	{
-		x -= dt*200;
+		x -= dt*400;
 	}
 
 	if (x >= 640){
