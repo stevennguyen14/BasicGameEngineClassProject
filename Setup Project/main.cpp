@@ -6,6 +6,9 @@
 #include "Entity.h"
 #include "Hero.h"
 #include <list>
+#include "InputHandler.h"
+#include "KeyboardHandler.h"
+#include "MouseHandler.h"
 
 using namespace std;
 
@@ -109,7 +112,7 @@ int main(int argc, char **argv)
 	//Animation Objects
 	Animation anim1(runSpriteSheet, renderer, 4, 32, 32, 0.2);//0.2 = 200 milliseconds per frame of animation
 	Animation anim2(runSpriteSheetWithNoBG, renderer, 4, 32, 32, 0.8);
-	Animation anim3(runSpriteSheet, renderer, 4, 32, 32, 0.05);//50ms per frame
+	Animation anim3(runSpriteSheetWithNoBG, renderer, 4, 32, 32, 0.05);//50ms per frame
 
 
 	//setup time stuff
@@ -126,6 +129,13 @@ int main(int argc, char **argv)
 	//build vector to represent starting position for hero
 	Vector heroStartPos(200, 200);
 	hero->setPosition(heroStartPos);
+
+	//CREATE INPUT HANDLERS
+	KeyboardHandler keyboardHandler;
+	keyboardHandler.hero = hero; //let it reference our hero
+
+	MouseHandler mouseHandler;
+	mouseHandler.hero = hero;
 
 	//add our hero to the list
 	entities.push_back(hero);
@@ -192,24 +202,11 @@ int main(int argc, char **argv)
 					//exit loop
 					loop = false;
 				}
-				//if press up
-				if (e.key.keysym.scancode == SDL_SCANCODE_UP)
-				{
-					//tell hero to move up now
-					Vector heroVelocity = hero->getVelocity();
-					heroVelocity.y = -100;
-					hero->setVelocity(heroVelocity);
-				}
-				//if press down
-				if (e.key.keysym.scancode == SDL_SCANCODE_DOWN)
-				{
-					//tell hero to move down now
-					Vector heroVelocity = hero->getVelocity();
-					heroVelocity.y = 100;
-					hero->setVelocity(heroVelocity);
-				}
+				
 			}
-
+			//use our keyboard handler to take it from here
+			keyboardHandler.update(&e);
+			mouseHandler.update(&e);
 		}
 		
 

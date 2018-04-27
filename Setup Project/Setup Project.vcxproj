@@ -39,8 +39,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>d:\Users\matthewc\Downloads\Setup Project\Setup Project\sdl2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>d:\Users\matthewc\Downloads\Setup Project\Setup Project\sdl2\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>d:\Users\6129\Documents\Visual Studio 2013\Projects\Setup Project\sdl2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>d:\Users\6129\Documents\Visual Studio 2013\Projects\Setup Project\sdl2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -72,13 +72,19 @@
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="KeyboardHandler.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MouseHandler.cpp" />
     <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Hero.h" />
+    <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="KeyboardHandler.h" />
+    <ClInclude Include="MouseHandler.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

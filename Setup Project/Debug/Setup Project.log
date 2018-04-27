@@ -1,21 +1,24 @@
-﻿Build started 20/04/2018 12:16:36 PM.
-     1>Project "d:\Users\matthewc\Downloads\Setup Project\Setup Project\Setup Project\Setup Project.vcxproj" on node 2 (Build target(s)).
+﻿Build started 27/04/2018 1:22:50 PM.
+     1>Project "d:\Users\6129\Documents\Visual Studio 2013\Projects\Setup Project\Setup Project\Setup Project.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>d:\users\matthewc\downloads\setup project\setup project\setup project\main.cpp(110): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>d:\users\matthewc\downloads\setup project\setup project\setup project\main.cpp(111): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>d:\users\matthewc\downloads\setup project\setup project\setup project\main.cpp(112): warning C4305: 'argument' : truncation from 'double' to 'float'
-     1>d:\users\matthewc\downloads\setup project\setup project\setup project\main.cpp(139): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>d:\users\6129\documents\visual studio 2013\projects\setup project\setup project\main.cpp(113): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\users\6129\documents\visual studio 2013\projects\setup project\setup project\main.cpp(114): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\users\6129\documents\visual studio 2013\projects\setup project\setup project\main.cpp(115): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>d:\users\6129\documents\visual studio 2013\projects\setup project\setup project\main.cpp(149): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"d:\Users\matthewc\Downloads\Setup Project\Setup Project\Debug\Setup Project.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"d:\Users\matthewc\Downloads\Setup Project\Setup Project\Debug\Setup Project.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"d:\Users\matthewc\Downloads\Setup Project\Setup Project\Debug\Setup Project.lib" /MACHINE:X86 Debug\Animation.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"d:\Users\6129\Documents\Visual Studio 2013\Projects\Setup Project\Debug\Setup Project.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"d:\Users\6129\Documents\Visual Studio 2013\Projects\Setup Project\Debug\Setup Project.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"d:\Users\6129\Documents\Visual Studio 2013\Projects\Setup Project\Debug\Setup Project.lib" /MACHINE:X86 Debug\Animation.obj
          Debug\Entity.obj
          Debug\Hero.obj
+         Debug\InputHandler.obj
+         Debug\KeyboardHandler.obj
          Debug\main.obj
+         Debug\MouseHandler.obj
          Debug\Vector.obj
-         Setup Project.vcxproj -> d:\Users\matthewc\Downloads\Setup Project\Setup Project\Debug\Setup Project.exe
-     1>Done Building Project "d:\Users\matthewc\Downloads\Setup Project\Setup Project\Setup Project\Setup Project.vcxproj" (Build target(s)).
+         Setup Project.vcxproj -> d:\Users\6129\Documents\Visual Studio 2013\Projects\Setup Project\Debug\Setup Project.exe
+     1>Done Building Project "d:\Users\6129\Documents\Visual Studio 2013\Projects\Setup Project\Setup Project\Setup Project.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.88
+Time Elapsed 00:00:01.04
